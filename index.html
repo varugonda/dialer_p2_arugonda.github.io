@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title> Phone Dialer </title>
+    <link rel="stylesheet" href="phone.css">
+  </head>
+  <body>
+    <div class="menu">
+      <button class="button" id="dialerButton">Dialer</button>
+      <button class="button" id="phonebookButton">Phonebook</button>
+      <button class="button" id="addcontactButton">Add Contact</button>
+    </div>
+    <div class="content" id="content">
+      <div class="screens" id="dialpad">
+        <form>
+          <input id="dialed" placeholder="123-456-7890" type="tel"/>
+        </form>
+        <button class="num" id="1">1</button>
+        <button class="num" id="2">2</button>
+        <button class="num" id="3">3</button>
+        <br/>
+        <button class="num" id="4">4</button>
+        <button class="num" id="5">5</button>
+        <button class="num" id="6">6</button>
+        <br/>
+        <button class="num" id="7">7</button>
+        <button class="num" id="8">8</button>
+        <button class="num" id="9">9</button>
+        <br/>
+        <button class="num" id="#">#</button>
+        <button class="num" id="0">0</button>
+        <button class="num" id="*">*</button>
+        <br/>
+        <button class="extra_buttons" id="call">Call</button>
+        <button class="extra_buttons" id="clear">Clear</button>
+      </div>
+
+      <div class="screens" id="contacts">
+        <button class="names" id="rd">Robert Drake</button>
+        <button class="names" id="ef">Emma Frost</button>
+        <button class="names" id="dg">Doreen Green</button>
+        <br/>
+        <button class="names" id="jg">Jean Grey</button>
+        <button class="names" id="jh">James Howlett</button>
+        <button class="names" id="om">Ororo Munroe</button>
+        <br/>
+        <button class="names" id="kp">Katherine Pryde</button>
+        <button class="names" id="pr">Piotr Rasputin</button>
+        <button class="names" id="ss">Scott Summers</button>
+        <br/>
+        <button class="names" id="kw">Kurt Wagner</button>
+        <button class="names" id="ww">Warren Worthington</button>
+        <button class="names" id="cx">Charles Xavier</button>
+      </div>
+
+      <div class="screens" id="addcontact">
+        <form class="add">
+          <label for="name">Name</label>
+          <input id="name" placeholder="Jane Smith">
+          <br/>
+          <br/>
+          <label for="phonenumber">Phone Number</label>
+          <input id="phonenumber" placeholder="123-456-7890">
+          <br/>
+          <br/>
+          <label for="email">Email</label>
+          <input id="email" placeholder="jane.smith@colorado.edu">
+        </form>
+        <button class="extra_buttons" id="addcontact1">Add Contact</button>
+        <button class="extra_buttons" id="clear1">Clear</button>
+      </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="phone.js"></script>
+  </body>
+</html>
