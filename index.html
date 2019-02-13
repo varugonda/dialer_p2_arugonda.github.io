@@ -4,15 +4,16 @@
     <link rel="stylesheet" href="phone.css">
   </head>
   <body>
-    <div class="menu">
-      <button class="button" id="dialerButton">Dialer</button>
-      <button class="button" id="phonebookButton">Phonebook</button>
-      <button class="button" id="addcontactButton">Add Contact</button>
+    <div class="menu" role="navigation">
+      <button class="nav" id="dialerButton">Dialer</button>
+      <button class="nav" id="phonebookButton">Phonebook</button>
+      <button class="nav" id="addcontactButton">Add Contact</button>
+      <button class="nav" id="helptab">Help</button>
     </div>
-    <div class="content" id="content">
+    <div class="content" id="content" role="main" aria-live="polite">
       <div class="screens" id="dialpad">
         <form>
-          <input id="dialed" placeholder="123-456-7890" type="tel"/>
+          <input id="dialed" placeholder="123-456-7890" type="tel" />
         </form>
         <button class="num" id="1">1</button>
         <button class="num" id="2">2</button>
@@ -20,7 +21,7 @@
         <br/>
         <button class="num" id="4">4</button>
         <button class="num" id="5">5</button>
-        <button class="num" id="6">6</button>
+        <button class="num" id="6">6</button> 
         <br/>
         <button class="num" id="7">7</button>
         <button class="num" id="8">8</button>
@@ -35,7 +36,7 @@
       </div>
 
       <div class="screens" id="contacts">
-        <button class="names" id="rd">Robert Drake</button>
+        <!-- <button class="names" id="rd">Robert Drake</button>
         <button class="names" id="ef">Emma Frost</button>
         <button class="names" id="dg">Doreen Green</button>
         <br/>
@@ -49,7 +50,74 @@
         <br/>
         <button class="names" id="kw">Kurt Wagner</button>
         <button class="names" id="ww">Warren Worthington</button>
-        <button class="names" id="cx">Charles Xavier</button>
+        <button class="names" id="cx">Charles Xavier</button> -->
+        <table style="width:40%">
+          <tr>
+            <th tabindex="0">Firstname</th>
+            <th tabindex="0">Lastname</th> 
+            <th tabindex="0">Phone Number</th>
+          </tr>
+          <tr>
+            <td tabindex="0">Robert</td>
+            <td tabindex="0">Drake</td> 
+            <td tabindex="0">(123)456-7890</td>
+          </tr>
+          <tr>
+            <td tabindex="0">Emma</td>
+            <td tabindex="0">Frost</td> 
+            <td tabindex="0">(123)456-7890</td>
+          </tr>
+          <tr>
+            <td tabindex="0">Doreen</td>
+            <td tabindex="0">Green</td> 
+            <td tabindex="0">(123)456-7890</td>
+          </tr>
+          <tr>
+            <td tabindex="0">Jean</td>
+            <td tabindex="0">Grey</td> 
+            <td tabindex="0">(123)456-7890</td>
+          </tr>
+          <tr>
+            <td tabindex="0">James</td>
+            <td tabindex="0">Howlett</td> 
+            <td tabindex="0">(123)456-7890</td>
+          </tr>
+          <tr>
+            <td tabindex="0">Ororo</td>
+            <td tabindex="0">Munroe</td> 
+            <td tabindex="0">(123)456-7890</td>
+          </tr>
+          <tr>
+            <td tabindex="0">Katherine</td>
+            <td tabindex="0">Pryde</td> 
+            <td tabindex="0">(123)456-7890</td>
+          </tr>
+          <tr>
+            <td tabindex="0">Piotr</td>
+            <td tabindex="0">Rasputin</td> 
+            <td tabindex="0">(123)456-7890</td>
+          </tr>
+          <tr>
+            <td tabindex="0">Scott</td>
+            <td tabindex="0">Summers</td> 
+            <td tabindex="0">(123)456-7890</td>
+          </tr>
+          <tr>
+            <td tabindex="0">Kurt</td>
+            <td tabindex="0">Wagner</td> 
+            <td tabindex="0">(123)456-7890</td>
+          </tr>
+          <tr>
+            <td tabindex="0">Warren</td>
+            <td tabindex="0">Worthington</td> 
+            <td tabindex="0">(123)456-7890</td>
+          </tr>
+          <tr>
+            <td tabindex="0">Charles</td>
+            <td tabindex="0">Xavier</td> 
+            <td tabindex="0">(123)456-7890</td>
+          </tr>
+        </table>
       </div>
 
       <div class="screens" id="addcontact">
@@ -69,9 +137,17 @@
         <button class="extra_buttons" id="clear1">Clear</button>
       </div>
 
+      <div class="screens" id="help">
+        -all dialer buttons tab </br>
+        -all cells in table tab </br>
+        -phone book is cells to improve data visibility </br>
+        -hotkeys added 'd,p,a,h' for each of four tabs </br>
+      </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
     <script src="phone.js"></script>
+
   </body>
 </html>

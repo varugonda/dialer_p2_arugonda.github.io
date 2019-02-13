@@ -5,3 +5,11 @@ form {margin: 10px 80px;}
 .add {margin: 20px 20px;}
 .extra_buttons { width: 148px; height: 30px; background: black; color: white; margin: 10px; border: 1px; }
 button:focus{box-shadow:0px 0px 0px 3px #0066ff}
+table {border-collapse: collapse;}
+table, th, td {border: 1px solid black;}
+th {text-align: left}
+td,th {padding: 10px}
+table {margin:10px}
+th:focus,td:focus {background: #eeeeee}
+body {font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}
+.nav { width: 90px; height: 30px; background: black; color: white; margin: 2px; border: 1px; border-radius:4px }
